@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", Georgia, Cambria, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom fine-scrollbar for the infinite categories selector sidepanel */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #334155; /* Slate-700 */
+  border-radius: 99px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #10b981; /* Emerald-600 */
+}
+
+/* Base Theme Soft Transition */
+html, body, #root {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* ==========================================================================
+   LIGHT MODE OVERRIDES
+   Intercepts Tailwind utility styles and replaces them dynamically 
+   with light-mode equivalents.
+   ========================================================================== */
+
+html.light,
+html.light body,
+html.light #root {
+  background-color: #FAF9F6 !important;
+  color: #1C1917 !important;
+}
+
+html.light .min-h-screen {
+  background-color: #FAF9F6 !important;
+  color: #44403C !important;
+}
+
+/* High Specificity Background Overrides */
+html.light .bg-\[\#0F172A\] {
+  background-color: #FAF9F6 !important;
+}
+
+html.light .bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, #FAF9F6, #F3F1EA, #FAF9F6) !important;
+}
+
+html.light .bg-\[\#0B1220\]\/90 {
+  background-color: rgba(243, 241, 234, 0.95) !important;
+}
+
+html.light .bg-\[\#090D1A\] {
+  background-color: #FDFDFB !important;
+}
+
+html.light .bg-slate-900 {
+  background-color: #FFFFFF !important;
+}
+
+html.light .bg-slate-900\/50 {
+  background-color: rgba(243, 241, 234, 0.5) !important;
+}
+
+html.light .bg-[#0F172A] {
+  background-color: #FAF9F6 !important;
+}
+
+html.light .bg-[#0B1220] {
+  background-color: #F3F1EA !important;
+}
+
+html.light .bg-[#090D1A] {
+  background-color: #FAF9F6 !important;
+}
+
+html.light .bg-slate-800 {
+  background-color: #FFFFFF !important;
+}
+
+html.light .bg-slate-800\/50 {
+  background-color: rgba(243, 241, 234, 0.6) !important;
+}
+
+html.light .bg-slate-800\/40 {
+  background-color: rgba(243, 241, 234, 0.4) !important;
+}
+
+html.light .bg-slate-800\/70 {
+  background-color: rgba(16, 185, 129, 0.05) !important;
+}
+
+html.light .bg-slate-900\/60 {
+  background-color: rgba(16, 185, 129, 0.08) !important;
+}
+
+html.light .bg-slate-900\/40 {
+  background-color: rgba(243, 241, 234, 0.4) !important;
+}
+
+html.light .bg-emerald-950\/50 {
+  background-color: rgba(16, 185, 129, 0.08) !important;
+}
+
+html.light .bg-emerald-950\/80 {
+  background-color: rgba(16, 185, 129, 0.05) !important;
+}
+
+/* High Specificity Text Color Overrides */
+html.light .text-slate-200 {
+  color: #1C1917 !important;
+}
+
+html.light .text-slate-300 {
+  color: #44403C !important;
+}
+
+html.light .text-slate-350 {
+  color: #047857 !important;
+}
+
+html.light .text-slate-400 {
+  color: #57534E !important;
+}
+
+html.light .text-slate-500 {
+  color: #87807B !important;
+}
+
+html.light .text-white {
+  color: #1C1917 !important;
+}
+
+html.light .text-[#34d399] {
+  color: #047857 !important; /* deep emerald */
+}
+
+html.light .text-emerald-400 {
+  color: #059669 !important;
+}
+
+html.light .text-emerald-305,
+html.light .text-emerald-450 {
+  color: #059669 !important;
+}
+
+html.light .text-emerald-300 {
+  color: #047857 !important;
+}
+
+html.light .text-\[\#34d399\] {
+  color: #059669 !important;
+}
+
+html.light .text-emerald-100 {
+  color: #064e3b !important;
+}
+
+/* Borders and Dividers */
+html.light .border-slate-800 {
+  border-color: #E6E2DB !important;
+}
+
+html.light .border-slate-800\/80 {
+  border-color: rgba(230, 226, 219, 0.8) !important;
+}
+
+html.light .border-slate-800\/85 {
+  border-color: rgba(230, 226, 219, 0.85) !important;
+}
+
+html.light .border-slate-700 {
+  border-color: #D1D5DB !important;
+}
+
+html.light .border-slate-700\/60 {
+  border-color: rgba(209, 213, 219, 0.6) !important;
+}
+
+html.light .border-slate-700\/80 {
+  border-color: rgba(209, 213, 219, 0.8) !important;
+}
+
+/* Navigation Custom Elements */
+html.light header {
+  background-color: rgba(250, 249, 246, 0.95) !important;
+  border-color: rgba(230, 226, 219, 0.9) !important;
+}
+
+html.light header span.text-white {
+  color: #1C1917 !important;
+}
+
+html.light header button.text-slate-400:hover {
+  color: #1C1917 !important;
+}
+
+html.light #theme-toggler {
+  border-color: #E6E2DB !important;
+}
+
+html.light #theme-toggler:hover {
+  background-color: rgba(230, 226, 219, 0.3) !important;
+}
+
+/* Input Fields & Textareas inside Contact form */
+html.light input,
+html.light textarea {
+  background-color: #FFFFFF !important;
+  color: #1C1917 !important;
+  border-color: #D1D5DB !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #9CA3AF !important;
+}
+
+html.light input:focus,
+html.light textarea:focus {
+  border-color: #10b981 !important;
+}
+
+/* Category select lists */
+html.light .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #E6E2DB;
+}
+html.light .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
