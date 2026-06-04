@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-@source "../index.html";
-@source "./**/*.{js,ts,jsx,tsx}";
-
 @theme {
   --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Lora", Georgia, Cambria, serif;
@@ -72,18 +69,6 @@ html.light .bg-slate-900\/50 {
   background-color: rgba(243, 241, 234, 0.5) !important;
 }
 
-html.light .bg-[#0F172A] {
-  background-color: #FAF9F6 !important;
-}
-
-html.light .bg-[#0B1220] {
-  background-color: #F3F1EA !important;
-}
-
-html.light .bg-[#090D1A] {
-  background-color: #FAF9F6 !important;
-}
-
 html.light .bg-slate-800 {
   background-color: #FFFFFF !important;
 }
@@ -139,10 +124,6 @@ html.light .text-slate-500 {
 
 html.light .text-white {
   color: #1C1917 !important;
-}
-
-html.light .text-[#34d399] {
-  color: #047857 !important; /* deep emerald */
 }
 
 html.light .text-emerald-400 {
