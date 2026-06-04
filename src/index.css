@@ -237,10 +237,3 @@ html.light .custom-scrollbar::-webkit-scrollbar-thumb {
 html.light .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #10b981;
 }
-body {
-  background: red !important;
-}
-
-h1 {
-  color: yellow !important;
-}
